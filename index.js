@@ -1,13 +1,13 @@
-var fs = require('fs');
-var jwt = require('jsonwebtoken');
-var privateKey = fs.readFileSync('private.pem');
-var token = jwt.sign({
+const fs = require('fs');
+const jwt = require('jsonwebtoken');
+
+const privateKey = fs.readFileSync('private.pem');
+const token = jwt.sign({
     iat: Date.now(),
     exp: (new Date('12/31/2099')).getTime(),
     aud: 'https://cobrowse.io',
-    iss: '1BWGVLGl9yCXYA',
-    sub: 'hirzi@keyreply.com',
-    displayName: 'Hirzi Keyreply',
-
+    iss: 'iss',
+    sub: 'your@email.com',
+    displayName: 'Your Name',
 }, {key: privateKey, passphrase: 'pwd'}, { algorithm: 'RS256' });
 console.log(token);
