@@ -25,7 +25,7 @@ $ openssl rsa -in private.pem -outform PEM -pubout -out public.pem
 $ 🔑 [insert your passphrase] <enter>
 $ cat public.pem
 ```
-Copy the whole Public Key given in the terminal (Public key shoould be something like this below)
+*NOTE: Copy the whole Public Key given in the terminal (Public key shoould be something like this below - this is dummy)
 ```
 -----BEGIN PUBLIC KEY-----
 UM16CdNNcdU+N0u9IiEpvPWig5ztMcunQoFtbogeKRoHS0R+1bm3h7T28qEcu1A0
