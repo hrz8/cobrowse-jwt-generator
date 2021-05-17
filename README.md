@@ -42,3 +42,12 @@ nOVhpP3x
 - Open [Dashboard Settings Page](https://cobrowse.io/dashboard/settings/integrations)
 - Put Public Key under **[JWT SSO]** Form
 - [Save] the settings
+
+## Generate JWT Token
+```bash
+$ node index.js [passphrase] [license_key] [email] [your name]
+```
+This will give you JWT Token, something like this
+```
+eyJhbGciOiJSUzI1NiIsIR5cCI6IkpXVC.eyJpYXQiOjE2MjEyNTYwOTI5NTksImV4cCI6NDEwMjMzMzIwMDAwMCwiYXVkIjoiaHR0cHM6Ly9jb2Jyb3dzZS5pbyIsImlzcyI6jFCV0dWTEdsOXlDWFlBIiwic3ViIjoiaGlyemludXJmYWtocmlhbkBnbWFpbC5jb20iLCJkaXNwbGF5TmFtZSI6IkhpcnppIE51cmZha2hyaWFu.u1n1gsSbua96OEgU3cHC8vYGfHeMnsR1vtE1f1OOdB2jw4V4slcKT5a9cvhV0LVSkbfFs8ZHSJjVE_kvzJ-BjNJvniOYtirLNGiPFtB6ePsRJ-_UVy_D8dmOxeTXTckUpyb2kwZaZTA-kBsD5g8_4zDHeRBhIkWLnrP49hlHy8F_BcbuQmle59nHiw1KroRO4Q6G95yjMtBSHIAEclpXlfru6t4G0r5jBeNDmlLrLrqh2tIy6cfwShFWWSPwlwTtO8ijVazSoiXjFoP0sVyMLHC7mhjO8KcuyjeWZrv1V3INL5yChxx9M1vmnvjSl4tM-r6bfAnjnXmgZdbcxG
+```
