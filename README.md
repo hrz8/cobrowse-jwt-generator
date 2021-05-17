@@ -10,6 +10,9 @@
 ```bash
 $ git clone https://github.com/hrz8/cobrowse-jwt-generator.git
 $ cd cobrowse-jwt-generator
+$ yarn
+# OR
+$ npm install
 ```
 
 ## Generate Private Key
