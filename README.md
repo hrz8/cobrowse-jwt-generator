@@ -15,12 +15,14 @@ $ cd cobrowse-jwt-generator
 ## Generate Private Key
 ```bash
 $ openssl genrsa -des3 -out private.pem 2048
-$ 🔑 [type new passphrase for your private RSA key]
+$ 🔑 [type new passphrase for your private RSA key] <enter>
+$ 🔑 [TWICE]
 ```
 
 ## Generate Public Key
 ```bash
 $ openssl rsa -in private.pem -outform PEM -pubout -out public.pem
+$ 🔑 [insert your passphrase] <enter>
 $ cat public.pem
 ```
 Copy the whole Public Key given in the terminal (Public key shoould be something like this below)
